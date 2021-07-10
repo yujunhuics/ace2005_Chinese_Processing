@@ -1,7 +1,6 @@
 # ACE 2005语料库中文信息抽取
 
-## Prerequisites
-
+## 准备工作
 1. 准备 **ACE 2005数据集**
 
    (Download: https://catalog.ldc.upenn.edu/LDC2006T06)
