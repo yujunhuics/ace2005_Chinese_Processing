@@ -1,5 +1,4 @@
-# ace2005chinese_preprocess
-ACE 2005 corpus preprocessing for Event Extraction task
+# ACE 2005语料库中文信息抽取
 
 ## Prerequisites
 
@@ -154,3 +153,4 @@ python main.py --data=./data/ace_2005/Chinese   #更改成你的数据集位置
 ]
 ```
 
+## 后期工作，根据需要进一步添加词性、语法树等处理。
