@@ -4,11 +4,11 @@
 
 1. 准备 **ACE 2005数据集**
 
-   (Download: https://catalog.ldc.upenn.edu/LDC2006T06. Note that ACE 2005 dataset is not free.)
+   (Download: https://catalog.ldc.upenn.edu/LDC2006T06)
 
 2. 安装依赖包
    ```
-   pip install beautifulsoup4 nltk tqdm
+   pip install bs4 nltk tqdm
    ```
 3. data_list.csv是需要处理的文件名称，这里我按文档划分为：train.json,dev.json,test.json
 
@@ -21,7 +21,7 @@ python main.py --data=./data/ace_2005/Chinese   #更改成你的数据集位置
 ``` 
 
 
-### Format
+### 格式
 
 我遵循nlpcl lab/ace2005预处理中描述的json格式
  [[github]](https://github.com/nlpcl-lab/ace2005-preprocessing)
