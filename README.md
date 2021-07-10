@@ -25,7 +25,6 @@ python main.py --data=./data/ace_2005/Chinese   #更改成你的数据集位置
 我遵循nlpcl lab/ace2005预处理中描述的json格式
  [[github]](https://github.com/nlpcl-lab/ace2005-preprocessing)
 但目前只有句子，事件，实体，其他信息，如依赖树，pos\u标签等，稍后会添加。实验中随机选择的数据划分方法（data_list.csv）不属于ED任务的权威划分方法。
-如果您想详细了解事件类型和参数，请阅读[this document (ACE 2005 event guidelines)](https://www.ldc.upenn.edu/sites/www.ldc.upenn.edu/files/english-events-guidelines-v5.4.3.pdf).
 
 ### 处理示例
 **`sample.json`**
