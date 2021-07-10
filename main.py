@@ -148,7 +148,7 @@ def preprocessing(data_type, files):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--data', help="Path of ACE2005 English data", default='./data/ace_2005_td_v7/data/Chinese')
+    parser.add_argument('--data', help="Path of ACE2005 English data", default=r'F:\Datasets\ace_2005_all\data\Chinese')
     args = parser.parse_args()
     test_files, dev_files, train_files = get_data_paths(args.data)
 

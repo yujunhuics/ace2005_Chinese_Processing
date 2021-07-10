@@ -16,14 +16,16 @@ class Parsers:
 
     @staticmethod
     def clean_text(text):
-        text = text.replace('\n', ' ')
+        # text = text.replace('\n', ' ')
+        text = text.replace('\n', ' ').replace(' ', '')  # 增加去除空格
         return text
 
     def get_data(self):
         data = []
 
         def clean_text(text):
-            text = text.replace('\n', ' ')
+            # text = text.replace('\n', ' ')
+            text = text.replace('\n', ' ').replace(' ', '')  # 增加去除空格
             return text
 
         for sent in self.sents_with_pos:
@@ -62,7 +64,8 @@ class Parsers:
                         try:
                             entity_type = entity_map[argument['entity-id']]['entity-type']
                         except KeyError:
-                            print('[Warning] The entity in the other sentence is mentioned. This argument will be ignored.')
+                            print(
+                                '[Warning] The entity in the other sentence is mentioned. This argument will be ignored.')
                             continue
 
                         event_arguments.append({
@@ -84,7 +87,7 @@ class Parsers:
 
     @staticmethod
     def parse_sgm(sgm_path):
-        with open(sgm_path, 'r',encoding='utf-8') as f:
+        with open(sgm_path, 'r', encoding='utf-8') as f:
             soup = BeautifulSoup(f.read(), features='html.parser')
             sgm_text = soup.text
 
@@ -113,7 +116,7 @@ class Parsers:
             last_pos = 0
             texts = [word for word in sgm_text]
             for sent in sents:
-                sent =sent.strip()
+                sent = sent.strip()
                 pos = sgm_text.find(sent, last_pos)
                 last_pos = pos
                 sents_with_pos.append({
@@ -223,8 +226,8 @@ class Parsers:
 
 
 if __name__ == '__main__':
-    #data = Parser('./data/ace_2005_td_v7/data/test_example/AFP_ENG_20030616.0715').get_data()
+    # data = Parser('./data/ace_2005_td_v7/data/test_example/AFP_ENG_20030616.0715').get_data()
 
-    data = Parsers('./data/ace_2005_td_v7/data/Chinese/bn/adj/CNR20001201.1700.0558').get_data()
-    with open('output/sample.jl', 'w') as f:
+    data = Parsers(r'F:\Datasets\ace_2005_all\data\Chinese/bn/adj/CBS20001126.1000.0174').get_data()
+    with open('output/sample.json', 'w') as f:
         json.dump(data, f, indent=2, ensure_ascii=False)

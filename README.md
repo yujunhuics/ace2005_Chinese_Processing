@@ -3,116 +3,154 @@ ACE 2005 corpus preprocessing for Event Extraction task
 
 ## Prerequisites
 
-1. Prepare **ACE 2005 dataset**. 
+1. 准备 **ACE 2005数据集**
 
    (Download: https://catalog.ldc.upenn.edu/LDC2006T06. Note that ACE 2005 dataset is not free.)
 
-2. Install the packages.
+2. 安装依赖包
    ```
    pip install beautifulsoup4 nltk tqdm
    ```
-3. Choose your data_list，not given above. (train/dev/test)
+3. data_list.csv是需要处理的文件名称，这里我按文档划分为：train.json,dev.json,test.json
 
-## Usage
+## 使用方法
 
 Run:
 
 ```bash
-sudo python main.py --data=./data/ace_2005/Chinese
+python main.py --data=./data/ace_2005/Chinese   #更改成你的数据集位置
 ``` 
 
-- Then you can get the parsed data in `output directory`. 
-
-## Output
 
 ### Format
 
-I follow the json format described in nlpcl-lab/ace2005-preprocessing
+我遵循nlpcl lab/ace2005预处理中描述的json格式
  [[github]](https://github.com/nlpcl-lab/ace2005-preprocessing)
-repository like the bellow sample. But currently only sentence, event-mentions, entity-mentions, others information such as dependency tree, pos_tags, etc. will be added later. The data division method (data_list.csv) is selected randomly during the experiment, it does not belong to the authoritative division method of ED task.
+但目前只有句子，事件，实体，其他信息，如依赖树，pos\u标签等，稍后会添加。实验中随机选择的数据划分方法（data_list.csv）不属于ED任务的权威划分方法。
+如果您想详细了解事件类型和参数，请阅读[this document (ACE 2005 event guidelines)](https://www.ldc.upenn.edu/sites/www.ldc.upenn.edu/files/english-events-guidelines-v5.4.3.pdf).
 
-If you want to know event types and arguments in detail, read [this document (ACE 2005 event guidelines)](https://www.ldc.upenn.edu/sites/www.ldc.upenn.edu/files/english-events-guidelines-v5.4.3.pdf).
-
-
+### 处理示例
 **`sample.json`**
 ```json
 
 [
    {
-    "sentence": "两个星期来，藤森曾亲自带队搜捕 前情报顾问蒙特西诺斯，迄今蒙特西诺斯仍未落网",
-    "golden-event-mentions": [
-      {
-        "arguments": [
-          {
-            "start": 29,
-            "end": 34,
-            "entity-type": "PER:Individual",
-            "text": "蒙特西诺斯",
-            "role": "Person"
-          },
-          {
-            "start": 0,
-            "end": 4,
-            "entity-type": "TIM:time",
-            "text": "两个星期",
-            "role": "Time"
-          }
-        ],
-        "trigger": {
-          "start": 36,
-          "end": 38,
-          "text": "落网"
-        },
-        "event_type": "Justice:Arrest-Jail"
-      }
+    "sentence": "美国《华盛顿邮报》：美国共和党总统候选人小布什放弃海外军人选票诉讼案",
+    "position": [
+      94,
+      130
     ],
     "golden-entity-mentions": [
       {
-        "start": 16,
-        "entity-type": "PER:Individual",
-        "text": "前情报顾问",
-        "end": 21,
-        "phrase-type": "NOM"
+        "text": "美国《华盛顿邮报",
+        "phrase-type": "NAM",
+        "position": [
+          94,
+          102
+        ],
+        "entity-type": "ORG:Media"
       },
       {
-        "start": 21,
-        "entity-type": "PER:Individual",
-        "text": "蒙特西诺斯",
-        "end": 26,
-        "phrase-type": "NAM"
+        "text": "美国",
+        "phrase-type": "NAM",
+        "position": [
+          94,
+          96
+        ],
+        "entity-type": "GPE:Nation"
       },
       {
-        "start": 29,
-        "entity-type": "PER:Individual",
-        "text": "蒙特西诺斯",
-        "end": 34,
-        "phrase-type": "NAM"
+        "text": "美国",
+        "phrase-type": "NAM",
+        "position": [
+          105,
+          106
+        ],
+        "entity-type": "GPE:Nation"
       },
       {
-        "start": 6,
-        "entity-type": "PER:Individual",
-        "text": "藤森",
-        "end": 8,
-        "phrase-type": "NAM"
+        "text": "小布什",
+        "phrase-type": "NAM",
+        "position": [
+          115,
+          117
+        ],
+        "entity-type": "PER:Individual"
       },
       {
-        "start": 0,
-        "entity-type": "TIM:time",
-        "text": "两个星期",
-        "end": 4,
-        "phrase-type": "TIM"
+        "text": "美国共和党总统候选人",
+        "phrase-type": "NOM",
+        "position": [
+          105,
+          114
+        ],
+        "entity-type": "PER:Individual"
       },
       {
-        "start": 27,
-        "entity-type": "TIM:time",
-        "text": "迄今",
-        "end": 29,
-        "phrase-type": "TIM"
+        "text": "美国共和党",
+        "phrase-type": "NAM",
+        "position": [
+          105,
+          109
+        ],
+        "entity-type": "ORG:Non-Governmental"
+      },
+      {
+        "text": "总统",
+        "phrase-type": "NOM",
+        "position": [
+          110,
+          111
+        ],
+        "entity-type": "PER:Individual"
+      },
+      {
+        "text": "海外军人",
+        "phrase-type": "NOM",
+        "position": [
+          120,
+          123
+        ],
+        "entity-type": "PER:Group"
+      },
+      {
+        "text": "海外",
+        "phrase-type": "NOM",
+        "position": [
+          120,
+          121
+        ],
+        "entity-type": "LOC:Region-International"
+      }
+    ],
+    "golden-event-mentions": [
+      {
+        "trigger": {
+          "text": "诉讼",
+          "position": [
+            127,
+            128
+          ]
+        },
+        "arguments": [
+          {
+            "role": "Defendant",
+            "position": [
+              115,
+              117
+            ],
+            "entity-type": "PER:Individual",
+            "text": "小布什"
+          }
+        ],
+        "position": [
+          127,
+          128
+        ],
+        "event_type": "Justice:Sue"
       }
     ]
   },
 ]
 ```
 
-### Reference
-- nlpcl-lab's ace2005-preprocessing repository,  [[github]](https://github.com/nlpcl-lab/ace2005-preprocessing)

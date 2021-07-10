@@ -1,0 +1,1018 @@
+[
+  {
+    "sentence": "接着为您报道11月26号世界各地主要报纸头条新闻标题",
+    "position": [
+      66,
+      92
+    ],
+    "golden-entity-mentions": [
+      {
+        "text": "您",
+        "phrase-type": "PRO",
+        "position": [
+          69,
+          69
+        ],
+        "entity-type": "PER:Individual"
+      },
+      {
+        "text": "世界",
+        "phrase-type": "NOM",
+        "position": [
+          78,
+          79
+        ],
+        "entity-type": "LOC:Celestial"
+      },
+      {
+        "text": "世界各地",
+        "phrase-type": "NOM",
+        "position": [
+          78,
+          81
+        ],
+        "entity-type": "LOC:Region-International"
+      },
+      {
+        "text": "世界各地主要报纸",
+        "phrase-type": "NOM",
+        "position": [
+          78,
+          85
+        ],
+        "entity-type": "ORG:Media"
+      },
+      {
+        "text": "11月26号",
+        "phrase-type": "TIM",
+        "position": [
+          72,
+          77
+        ],
+        "entity-type": "TIM:time"
+      }
+    ],
+    "golden-event-mentions": []
+  },
+  {
+    "sentence": "美国《华盛顿邮报》：美国共和党总统候选人小布什放弃海外军人选票诉讼案",
+    "position": [
+      94,
+      130
+    ],
+    "golden-entity-mentions": [
+      {
+        "text": "美国《华盛顿邮报",
+        "phrase-type": "NAM",
+        "position": [
+          94,
+          102
+        ],
+        "entity-type": "ORG:Media"
+      },
+      {
+        "text": "美国",
+        "phrase-type": "NAM",
+        "position": [
+          94,
+          96
+        ],
+        "entity-type": "GPE:Nation"
+      },
+      {
+        "text": "美国",
+        "phrase-type": "NAM",
+        "position": [
+          105,
+          106
+        ],
+        "entity-type": "GPE:Nation"
+      },
+      {
+        "text": "小布什",
+        "phrase-type": "NAM",
+        "position": [
+          115,
+          117
+        ],
+        "entity-type": "PER:Individual"
+      },
+      {
+        "text": "美国共和党总统候选人",
+        "phrase-type": "NOM",
+        "position": [
+          105,
+          114
+        ],
+        "entity-type": "PER:Individual"
+      },
+      {
+        "text": "美国共和党",
+        "phrase-type": "NAM",
+        "position": [
+          105,
+          109
+        ],
+        "entity-type": "ORG:Non-Governmental"
+      },
+      {
+        "text": "总统",
+        "phrase-type": "NOM",
+        "position": [
+          110,
+          111
+        ],
+        "entity-type": "PER:Individual"
+      },
+      {
+        "text": "海外军人",
+        "phrase-type": "NOM",
+        "position": [
+          120,
+          123
+        ],
+        "entity-type": "PER:Group"
+      },
+      {
+        "text": "海外",
+        "phrase-type": "NOM",
+        "position": [
+          120,
+          121
+        ],
+        "entity-type": "LOC:Region-International"
+      }
+    ],
+    "golden-event-mentions": [
+      {
+        "trigger": {
+          "text": "诉讼",
+          "position": [
+            127,
+            128
+          ]
+        },
+        "arguments": [
+          {
+            "role": "Defendant",
+            "position": [
+              115,
+              117
+            ],
+            "entity-type": "PER:Individual",
+            "text": "小布什"
+          }
+        ],
+        "position": [
+          127,
+          128
+        ],
+        "event_type": "Justice:Sue"
+      }
+    ]
+  },
+  {
+    "sentence": "美国《洛杉矶时报》：美国联邦最高法院同意受理小布什提出的选票上诉案，决定12月1号举行选票争议听证会",
+    "position": [
+      132,
+      184
+    ],
+    "golden-entity-mentions": [
+      {
+        "text": "美国联邦最高法院",
+        "phrase-type": "NAM",
+        "position": [
+          142,
+          149
+        ],
+        "entity-type": "ORG:Government"
+      },
+      {
+        "text": "美国",
+        "phrase-type": "NAM",
+        "position": [
+          142,
+          143
+        ],
+        "entity-type": "GPE:Nation"
+      },
+      {
+        "text": "美国",
+        "phrase-type": "NAM",
+        "position": [
+          132,
+          133
+        ],
+        "entity-type": "GPE:Nation"
+      },
+      {
+        "text": "小布什",
+        "phrase-type": "NAM",
+        "position": [
+          154,
+          157
+        ],
+        "entity-type": "PER:Individual"
+      },
+      {
+        "text": "美国《洛杉矶时报",
+        "phrase-type": "NAM",
+        "position": [
+          132,
+          139
+        ],
+        "entity-type": "ORG:Media"
+      },
+      {
+        "text": "12月1号",
+        "phrase-type": "TIM",
+        "position": [
+          169,
+          173
+        ],
+        "entity-type": "TIM:time"
+      }
+    ],
+    "golden-event-mentions": [
+      {
+        "trigger": {
+          "text": "上诉",
+          "position": [
+            163,
+            164
+          ]
+        },
+        "arguments": [
+          {
+            "role": "Adjudicator",
+            "position": [
+              142,
+              149
+            ],
+            "entity-type": "ORG:Government",
+            "text": "美国联邦最高法院"
+          },
+          {
+            "role": "Defendant",
+            "position": [
+              154,
+              157
+            ],
+            "entity-type": "PER:Individual",
+            "text": "小布什"
+          }
+        ],
+        "position": [
+          163,
+          164
+        ],
+        "event_type": "Justice:Sue"
+      },
+      {
+        "trigger": {
+          "text": "听证",
+          "position": [
+            181,
+            182
+          ]
+        },
+        "arguments": [
+          {
+            "role": "Adjudicator",
+            "position": [
+              142,
+              149
+            ],
+            "entity-type": "ORG:Government",
+            "text": "美国联邦最高法院"
+          },
+          {
+            "role": "Prosecutor",
+            "position": [
+              154,
+              157
+            ],
+            "entity-type": "PER:Individual",
+            "text": "小布什"
+          },
+          {
+            "role": "Time",
+            "position": [
+              169,
+              173
+            ],
+            "entity-type": "TIM:time",
+            "text": "12月1号"
+          }
+        ],
+        "position": [
+          181,
+          182
+        ],
+        "event_type": "Justice:Trial-Hearing"
+      }
+    ]
+  },
+  {
+    "sentence": "日本《独卖新闻》：荷兰海牙召开的防止地球暖化公约第6届会议破裂，与会国没有能够答成任何协议",
+    "position": [
+      187,
+      234
+    ],
+    "golden-entity-mentions": [
+      {
+        "text": "日本《独卖新闻",
+        "phrase-type": "NAM",
+        "position": [
+          187,
+          193
+        ],
+        "entity-type": "ORG:Media"
+      },
+      {
+        "text": "日本",
+        "phrase-type": "NAM",
+        "position": [
+          187,
+          188
+        ],
+        "entity-type": "GPE:Nation"
+      },
+      {
+        "text": "荷兰海牙",
+        "phrase-type": "NAM",
+        "position": [
+          196,
+          199
+        ],
+        "entity-type": "GPE:Population-Center"
+      },
+      {
+        "text": "荷兰",
+        "phrase-type": "NAM",
+        "position": [
+          196,
+          197
+        ],
+        "entity-type": "GPE:Nation"
+      },
+      {
+        "text": "与会国",
+        "phrase-type": "NOM",
+        "position": [
+          220,
+          222
+        ],
+        "entity-type": "GPE:Nation"
+      }
+    ],
+    "golden-event-mentions": []
+  },
+  {
+    "sentence": "新加坡《海峡时报》：东南亚国家协会推动一连串行动计划，新加坡首先推动一体化计划，将提供技术援助柬甫寨、辽国、缅甸和越南",
+    "position": [
+      236,
+      298
+    ],
+    "golden-entity-mentions": [
+      {
+        "text": "新加坡《海峡时报",
+        "phrase-type": "NAM",
+        "position": [
+          236,
+          243
+        ],
+        "entity-type": "ORG:Media"
+      },
+      {
+        "text": "新加坡",
+        "phrase-type": "NAM",
+        "position": [
+          236,
+          238
+        ],
+        "entity-type": "GPE:Nation"
+      },
+      {
+        "text": "新加坡",
+        "phrase-type": "NAM",
+        "position": [
+          264,
+          266
+        ],
+        "entity-type": "GPE:Nation"
+      },
+      {
+        "text": "东南亚国家协会",
+        "phrase-type": "NAM",
+        "position": [
+          247,
+          253
+        ],
+        "entity-type": "ORG:Non-Governmental"
+      },
+      {
+        "text": "柬甫寨",
+        "phrase-type": "NAM",
+        "position": [
+          286,
+          288
+        ],
+        "entity-type": "GPE:Nation"
+      },
+      {
+        "text": "辽国",
+        "phrase-type": "NAM",
+        "position": [
+          290,
+          291
+        ],
+        "entity-type": "GPE:Nation"
+      },
+      {
+        "text": "缅甸",
+        "phrase-type": "NAM",
+        "position": [
+          293,
+          294
+        ],
+        "entity-type": "GPE:Nation"
+      },
+      {
+        "text": "越南",
+        "phrase-type": "NAM",
+        "position": [
+          296,
+          297
+        ],
+        "entity-type": "GPE:Nation"
+      }
+    ],
+    "golden-event-mentions": []
+  },
+  {
+    "sentence": "泰国《曼谷新报》：泰国南部水患渐趋缓和，总理川力佩前往灾区视察",
+    "position": [
+      300,
+      332
+    ],
+    "golden-entity-mentions": [
+      {
+        "text": "泰国《曼谷新报",
+        "phrase-type": "NAM",
+        "position": [
+          300,
+          307
+        ],
+        "entity-type": "ORG:Media"
+      },
+      {
+        "text": "泰国",
+        "phrase-type": "NAM",
+        "position": [
+          300,
+          301
+        ],
+        "entity-type": "GPE:Nation"
+      },
+      {
+        "text": "泰国",
+        "phrase-type": "NAM",
+        "position": [
+          310,
+          311
+        ],
+        "entity-type": "GPE:Nation"
+      },
+      {
+        "text": "泰国南部",
+        "phrase-type": "NOM",
+        "position": [
+          310,
+          313
+        ],
+        "entity-type": "LOC:Region-General"
+      },
+      {
+        "text": "灾区",
+        "phrase-type": "NOM",
+        "position": [
+          328,
+          329
+        ],
+        "entity-type": "LOC:Region-General"
+      },
+      {
+        "text": "川力佩",
+        "phrase-type": "NAM",
+        "position": [
+          323,
+          325
+        ],
+        "entity-type": "PER:Individual"
+      },
+      {
+        "text": "总理",
+        "phrase-type": "NOM",
+        "position": [
+          321,
+          322
+        ],
+        "entity-type": "PER:Individual"
+      }
+    ],
+    "golden-event-mentions": [
+      {
+        "trigger": {
+          "text": "前往",
+          "position": [
+            326,
+            327
+          ]
+        },
+        "arguments": [
+          {
+            "role": "Artifact",
+            "position": [
+              323,
+              325
+            ],
+            "entity-type": "PER:Individual",
+            "text": "川力佩"
+          },
+          {
+            "role": "Destination",
+            "position": [
+              328,
+              329
+            ],
+            "entity-type": "LOC:Region-General",
+            "text": "灾区"
+          }
+        ],
+        "position": [
+          326,
+          327
+        ],
+        "event_type": "Movement:Transport"
+      }
+    ]
+  },
+  {
+    "sentence": "泰国《亚洲日报》：东协10国加上中共、日本和南韩的非正式领袖高峰会达成电子框架协议",
+    "position": [
+      334,
+      377
+    ],
+    "golden-entity-mentions": [
+      {
+        "text": "日本",
+        "phrase-type": "NAM",
+        "position": [
+          354,
+          355
+        ],
+        "entity-type": "GPE:Nation"
+      },
+      {
+        "text": "东协",
+        "phrase-type": "NAM",
+        "position": [
+          344,
+          345
+        ],
+        "entity-type": "ORG:Non-Governmental"
+      },
+      {
+        "text": "泰国",
+        "phrase-type": "NAM",
+        "position": [
+          334,
+          336
+        ],
+        "entity-type": "GPE:Nation"
+      },
+      {
+        "text": "泰国《亚洲日报",
+        "phrase-type": "NAM",
+        "position": [
+          334,
+          341
+        ],
+        "entity-type": "ORG:Media"
+      },
+      {
+        "text": "东协10国",
+        "phrase-type": "NOM",
+        "position": [
+          344,
+          348
+        ],
+        "entity-type": "GPE:Nation"
+      },
+      {
+        "text": "中共",
+        "phrase-type": "NAM",
+        "position": [
+          351,
+          352
+        ],
+        "entity-type": "GPE:Special"
+      },
+      {
+        "text": "南韩",
+        "phrase-type": "NAM",
+        "position": [
+          357,
+          358
+        ],
+        "entity-type": "GPE:Nation"
+      },
+      {
+        "text": "领袖",
+        "phrase-type": "NOM",
+        "position": [
+          363,
+          364
+        ],
+        "entity-type": "PER:Group"
+      }
+    ],
+    "golden-event-mentions": [
+      {
+        "trigger": {
+          "text": "会",
+          "position": [
+            368,
+            368
+          ]
+        },
+        "arguments": [
+          {
+            "role": "Entity",
+            "position": [
+              344,
+              348
+            ],
+            "entity-type": "GPE:Nation",
+            "text": "东协10国"
+          },
+          {
+            "role": "Entity",
+            "position": [
+              351,
+              352
+            ],
+            "entity-type": "GPE:Special",
+            "text": "中共"
+          },
+          {
+            "role": "Entity",
+            "position": [
+              354,
+              355
+            ],
+            "entity-type": "GPE:Nation",
+            "text": "日本"
+          },
+          {
+            "role": "Entity",
+            "position": [
+              357,
+              358
+            ],
+            "entity-type": "GPE:Nation",
+            "text": "南韩"
+          }
+        ],
+        "position": [
+          368,
+          368
+        ],
+        "event_type": "Contact:Meet"
+      }
+    ]
+  },
+  {
+    "sentence": "香港《苹果日报》：全球三分之一的黑面皮鹭飞到香港过冬",
+    "position": [
+      379,
+      406
+    ],
+    "golden-entity-mentions": [
+      {
+        "text": "香港《苹果日报",
+        "phrase-type": "NAM",
+        "position": [
+          379,
+          385
+        ],
+        "entity-type": "ORG:Media"
+      },
+      {
+        "text": "香港",
+        "phrase-type": "NAM",
+        "position": [
+          379,
+          380
+        ],
+        "entity-type": "GPE:Population-Center"
+      },
+      {
+        "text": "香港",
+        "phrase-type": "NAM",
+        "position": [
+          402,
+          403
+        ],
+        "entity-type": "GPE:Population-Center"
+      },
+      {
+        "text": "全球",
+        "phrase-type": "NOM",
+        "position": [
+          388,
+          389
+        ],
+        "entity-type": "LOC:Celestial"
+      },
+      {
+        "text": "三分之一",
+        "phrase-type": "NUM",
+        "position": [
+          390,
+          393
+        ],
+        "entity-type": "Numeric:Percent"
+      }
+    ],
+    "golden-event-mentions": []
+  },
+  {
+    "sentence": "香港《公正报》：中共总理朱容基要求远华走私案的主谋赖昌星引渡回大陆受审",
+    "position": [
+      408,
+      444
+    ],
+    "golden-entity-mentions": [
+      {
+        "text": "中共",
+        "phrase-type": "NAM",
+        "position": [
+          416,
+          417
+        ],
+        "entity-type": "GPE:Special"
+      },
+      {
+        "text": "大陆",
+        "phrase-type": "NOM",
+        "position": [
+          440,
+          441
+        ],
+        "entity-type": "GPE:Special"
+      },
+      {
+        "text": "香港",
+        "phrase-type": "NAM",
+        "position": [
+          408,
+          409
+        ],
+        "entity-type": "GPE:Population-Center"
+      },
+      {
+        "text": "香港《公正报",
+        "phrase-type": "NAM",
+        "position": [
+          408,
+          413
+        ],
+        "entity-type": "ORG:Media"
+      },
+      {
+        "text": "朱容基",
+        "phrase-type": "NAM",
+        "position": [
+          420,
+          422
+        ],
+        "entity-type": "PER:Individual"
+      },
+      {
+        "text": "中共总理",
+        "phrase-type": "NOM",
+        "position": [
+          416,
+          419
+        ],
+        "entity-type": "PER:Individual"
+      },
+      {
+        "text": "赖昌星",
+        "phrase-type": "NAM",
+        "position": [
+          434,
+          436
+        ],
+        "entity-type": "PER:Individual"
+      },
+      {
+        "text": "远华走私案的主谋",
+        "phrase-type": "NOM",
+        "position": [
+          426,
+          433
+        ],
+        "entity-type": "PER:Individual"
+      },
+      {
+        "text": "远华",
+        "phrase-type": "NAM",
+        "position": [
+          426,
+          427
+        ],
+        "entity-type": "ORG:Commercial"
+      }
+    ],
+    "golden-event-mentions": [
+      {
+        "trigger": {
+          "text": "引渡",
+          "position": [
+            437,
+            438
+          ]
+        },
+        "arguments": [
+          {
+            "role": "Defendant",
+            "position": [
+              434,
+              436
+            ],
+            "entity-type": "PER:Individual",
+            "text": "赖昌星"
+          },
+          {
+            "role": "Place",
+            "position": [
+              440,
+              441
+            ],
+            "entity-type": "GPE:Special",
+            "text": "大陆"
+          }
+        ],
+        "position": [
+          437,
+          438
+        ],
+        "event_type": "Justice:Acquit"
+      },
+      {
+        "trigger": {
+          "text": "受审",
+          "position": [
+            442,
+            443
+          ]
+        },
+        "arguments": [
+          {
+            "role": "Defendant",
+            "position": [
+              434,
+              436
+            ],
+            "entity-type": "PER:Individual",
+            "text": "赖昌星"
+          },
+          {
+            "role": "Place",
+            "position": [
+              440,
+              441
+            ],
+            "entity-type": "GPE:Special",
+            "text": "大陆"
+          }
+        ],
+        "position": [
+          442,
+          443
+        ],
+        "event_type": "Justice:Trial-Hearing"
+      },
+      {
+        "trigger": {
+          "text": "回",
+          "position": [
+            439,
+            439
+          ]
+        },
+        "arguments": [
+          {
+            "role": "Artifact",
+            "position": [
+              434,
+              436
+            ],
+            "entity-type": "PER:Individual",
+            "text": "赖昌星"
+          },
+          {
+            "role": "Destination",
+            "position": [
+              440,
+              441
+            ],
+            "entity-type": "GPE:Special",
+            "text": "大陆"
+          }
+        ],
+        "position": [
+          439,
+          439
+        ],
+        "event_type": "Movement:Transport"
+      }
+    ]
+  },
+  {
+    "sentence": "土耳基《每日新闻报》：伊拉克班机20年来首次飞航叙利亚",
+    "position": [
+      446,
+      474
+    ],
+    "golden-entity-mentions": [
+      {
+        "text": "土耳基《每日新闻报",
+        "phrase-type": "NAM",
+        "position": [
+          446,
+          454
+        ],
+        "entity-type": "ORG:Media"
+      },
+      {
+        "text": "土耳基",
+        "phrase-type": "NAM",
+        "position": [
+          446,
+          448
+        ],
+        "entity-type": "GPE:Nation"
+      },
+      {
+        "text": "伊拉克班机",
+        "phrase-type": "NOM",
+        "position": [
+          458,
+          462
+        ],
+        "entity-type": "VEH:Air"
+      },
+      {
+        "text": "伊拉克",
+        "phrase-type": "NAM",
+        "position": [
+          458,
+          460
+        ],
+        "entity-type": "GPE:Nation"
+      },
+      {
+        "text": "叙利亚",
+        "phrase-type": "NAM",
+        "position": [
+          471,
+          473
+        ],
+        "entity-type": "GPE:Nation"
+      },
+      {
+        "text": "20年",
+        "phrase-type": "TIM",
+        "position": [
+          463,
+          465
+        ],
+        "entity-type": "TIM:time"
+      }
+    ],
+    "golden-event-mentions": []
+  },
+  {
+    "sentence": "11/26/200010:04:20.46",
+    "position": [
+      482,
+      504
+    ],
+    "golden-entity-mentions": [],
+    "golden-event-mentions": []
+  }
+]
